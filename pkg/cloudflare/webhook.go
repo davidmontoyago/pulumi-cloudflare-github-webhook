@@ -16,8 +16,8 @@ import (
 //go:embed scripts/base/webhook.js
 var webhookBaseScript []byte
 
-// CloudflareWebhookStack represents the Cloudflare Worker infrastructure
-type CloudflareWebhookStack struct {
+// CloudflareGithubWebhook represents the Cloudflare Worker infrastructure
+type CloudflareGithubWebhook struct {
 	namer.Namer
 
 	pulumi.ResourceState
@@ -42,8 +42,8 @@ type WebhookEnvVar struct {
 }
 
 // NewCloudflareWebhookStack creates a new Cloudflare Worker and Worker Script
-func NewCloudflareWebhookStack(ctx *pulumi.Context, name string, envVars []WebhookEnvVar, config *Config) (*CloudflareWebhookStack, error) {
-	component := &CloudflareWebhookStack{
+func NewCloudflareWebhookStack(ctx *pulumi.Context, name string, envVars []WebhookEnvVar, config *Config) (*CloudflareGithubWebhook, error) {
+	component := &CloudflareGithubWebhook{
 		Namer: namer.New(name),
 
 		domainURL:  config.WorkerDomainURL,
