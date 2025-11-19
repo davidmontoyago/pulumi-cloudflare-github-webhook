@@ -1,6 +1,7 @@
 package cloudflare_test
 
 import (
+	"log"
 	"os"
 	"testing"
 
@@ -26,7 +27,10 @@ func TestNewCloudflareWebhookStack_HappyPath(t *testing.T) {
 	// Create a temporary handler script for testing
 	tempHandlerScript, err := os.CreateTemp("", "test-handler-*.js")
 	require.NoError(t, err, "Failed to create temp handler script")
-	defer os.Remove(tempHandlerScript.Name())
+	defer func() {
+		err := os.Remove(tempHandlerScript.Name())
+		log.Default().Printf("Failed to remove temp handler script: %v", err)
+	}()
 
 	handlerScriptContent := `
 async function handle(githubEvent, payload, env) {

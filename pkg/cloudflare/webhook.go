@@ -31,8 +31,6 @@ type CloudflareGithubWebhook struct {
 	// WorkerDomainURL is the zone domain URL where the worker is accessible
 	domainURL  string
 	workerPath string
-
-	gcpCredentialsJson pulumi.StringOutput
 }
 
 type WebhookEnvVar struct {
