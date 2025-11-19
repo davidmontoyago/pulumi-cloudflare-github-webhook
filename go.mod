@@ -1,7 +1,5 @@
 module github.com/davidmontoyago/pulumi-cloudflare-github-webhook
 
-replace github.com/davidmontoyago/pulumi-cloudflare-github-webhook => ./
-
 go 1.24.5
 
 require (
