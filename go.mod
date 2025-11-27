@@ -6,13 +6,12 @@ require (
 	github.com/davidmontoyago/commodity-namer v0.2.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/pulumi/pulumi-cloudflare/sdk/v6 v6.11.0
-	github.com/pulumi/pulumi/sdk/v3 v3.208.0
+	github.com/pulumi/pulumi/sdk/v3 v3.209.0
 	github.com/stretchr/testify v1.11.1
 )
 
 require (
 	dario.cat/mergo v1.0.2 // indirect
-	github.com/BurntSushi/toml v1.5.0 // indirect
 	github.com/Microsoft/go-winio v0.6.2 // indirect
 	github.com/ProtonMail/go-crypto v1.3.0 // indirect
 	github.com/agext/levenshtein v1.2.3 // indirect
@@ -87,7 +86,7 @@ require (
 	github.com/xo/terminfo v0.0.0-20220910002029-abceb7e1c41e // indirect
 	github.com/zclconf/go-cty v1.17.0 // indirect
 	go.uber.org/atomic v1.11.0 // indirect
-	golang.org/x/crypto v0.44.0 // indirect
+	golang.org/x/crypto v0.45.0 // indirect
 	golang.org/x/exp v0.0.0-20251113190631-e25ba8c21ef6 // indirect
 	golang.org/x/mod v0.30.0 // indirect
 	golang.org/x/net v0.47.0 // indirect
