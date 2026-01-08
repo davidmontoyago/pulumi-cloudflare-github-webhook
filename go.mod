@@ -6,7 +6,7 @@ require (
 	github.com/davidmontoyago/commodity-namer v0.2.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/pulumi/pulumi-cloudflare/sdk/v6 v6.12.0
-	github.com/pulumi/pulumi/sdk/v3 v3.214.1
+	github.com/pulumi/pulumi/sdk/v3 v3.215.0
 	github.com/stretchr/testify v1.11.1
 )
 
